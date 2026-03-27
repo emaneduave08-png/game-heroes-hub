@@ -1,10 +1,29 @@
 {
   "name": "Mobile Legends",
-  "lanes": {
-    "exp": ["Alucard"],
-    "mid": ["Gusion"],
-    "jungler": ["Alucard"],
-    "gold": ["Layla"],
-    "roam": ["Gusion"]
+  "heroes": {
+    "exp": [
+      {
+        "name": "Alucard",
+        "role": "Fighter",
+        "image": "images/alucard.jpg",
+        "desc": "Strong lifesteal fighter."
+      }
+    ],
+    "mid": [
+      {
+        "name": "Gusion",
+        "role": "Assassin/Mage",
+        "image": "images/gusion.jpg",
+        "desc": "Fast combo burst hero."
+      }
+    ],
+    "gold": [
+      {
+        "name": "Layla",
+        "role": "Marksman",
+        "image": "images/layla.png",
+        "desc": "Long range damage dealer."
+      }
+    ]
   }
 }
