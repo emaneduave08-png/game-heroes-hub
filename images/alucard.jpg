@@ -1,1 +1,2 @@
-
+fetch(`Heroes/Alucard.html`)  // para sa hero guide
+<img src="images/alucard.jpg"> // para sa hero picture
