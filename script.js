@@ -8,7 +8,7 @@ let heroButtonsDiv = null;
 // Load hero HTML from separate file
 async function loadHeroHTML(fileName) {
     try {
-        const response = await fetch(`Heroes/${fileName}`);
+        const response = await fetch(Games/ml.json}`);
         if (!response.ok) throw new Error('File not found');
         const html = await response.text();
         heroInfoDiv.innerHTML = html;
