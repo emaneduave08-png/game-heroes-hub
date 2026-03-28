@@ -1,4 +1,4 @@
-const hokHeroes = [
+const hokHeroes = [...]
   {
     name: "Lu Bu",
     role: "Fighter",
