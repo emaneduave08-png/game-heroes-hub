@@ -2,29 +2,17 @@
 <html>
 <head>
   <title>ML Heroes</title>
-  <link rel="stylesheet" href="css/style.css">
-  <script src="js/main.js" defer></script>
 </head>
 <body>
 
 <h1>Mobile Legends Heroes</h1>
 
-<!-- SEARCH BAR -->
-<input type="text" id="searchML" placeholder="Search Hero..." onkeyup="searchML()">
+<input type="text" id="search" placeholder="Search hero..." onkeyup="searchHero()">
 
-<!-- HERO LIST -->
-<button onclick="showMLHero()">Alucard</button>
-
-<!-- OUTPUT -->
-<div id="mlOutput"></div>
+<div id="suggestions"></div>
 
 <br>
 <a href="index.html">Back Home</a>
-<h1>ML Heroes</h1>
-
-<input type="text" id="search" onkeyup="searchHero()" placeholder="Search hero...">
-
-<div id="suggestions"></div>
 
 <script src="js/main.js"></script>
 </body>
