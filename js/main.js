@@ -18,6 +18,8 @@ const mlHeroes = [
     id: "layla"
   }
 ];
+
+// 🔎 SEARCH + SUGGESTIONS
 function searchHero() {
   let input = document.getElementById("search").value.toLowerCase();
   let suggestions = document.getElementById("suggestions");
@@ -27,13 +29,18 @@ function searchHero() {
   mlHeroes.forEach(hero => {
     if (hero.name.toLowerCase().includes(input) && input !== "") {
       suggestions.innerHTML += `
-        <p onclick="openHero('${hero.id}')">
-          ${hero.name}
-        </p>
+        <p onclick="openHero('${hero.id}')">${hero.name}</p>
       `;
     }
   });
 }
+
+// 👉 REDIRECT TO PROFILE PAGE
+function openHero(heroId) {
+  window.location.href = "hero.html?hero=" + heroId;
+}
+
+// 📄 LOAD HERO INFO
 function showHeroPage() {
   const urlParams = new URLSearchParams(window.location.search);
   const heroId = urlParams.get("hero");
