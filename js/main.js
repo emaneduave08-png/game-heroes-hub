@@ -10,3 +10,17 @@ function showHOKHero() {
     "<p>Role: Fighter</p>" +
     "<p>Strategy: Mag-engage kapag may ult, very strong sa 1v1 at team fights.</p>";
 }
+function searchML() {
+  let input = document.getElementById("searchML").value.toLowerCase();
+
+  if (input === "alucard") {
+    showMLHero();
+  }
+}
+function searchHOK() {
+  let input = document.getElementById("searchHOK").value.toLowerCase();
+
+  if (input === "lu bu") {
+    showHOKHero();
+  }
+}
